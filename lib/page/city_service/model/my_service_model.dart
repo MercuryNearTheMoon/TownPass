@@ -28,7 +28,7 @@ enum MyServiceItemId {
   library,
   locationSearch,
   zoo,
-  ;
+  cfservice;
 }
 
 extension MyServiceIdExt on MyServiceItemId {
@@ -173,6 +173,13 @@ extension MyServiceIdExt on MyServiceItemId {
           icon: Assets.svg.iconZoo24.svg(),
           category: MyServiceCategory.explore,
           destinationUrl: '',
+        ),
+      MyServiceItemId.cfservice => MyServiceItem(
+          title: '黑客松',
+          description: '黑客松',
+          icon: Assets.svg.iconDistrictOffice.svg(),
+          category: MyServiceCategory.cityService,
+          destinationUrl: 'https://townpass-service.web.app/',
         ),
     };
   }
